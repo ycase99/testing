@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahabat Donasi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navigasi utama">
+        <a class="brand" href="#home" aria-label="Sahabat Donasi">
+          <span class="brand-icon">❤</span>
+          <span>Sahabat Donasi</span>
+        </a>
+        <div class="nav-links">
+          <a href="#program">Program</a>
+          <a href="#donasi">Donasi</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Gerakan kecil, dampak besar</p>
+          <h1>Bantu sesama dengan donasi yang mudah dan transparan.</h1>
+          <p class="hero-description">
+            Salurkan bantuan Anda untuk kebutuhan pangan, pendidikan, dan kesehatan
+            keluarga yang membutuhkan. Setiap rupiah berarti.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#donasi">Donasi Sekarang</a>
+            <a class="button secondary" href="#program">Lihat Program</a>
+          </div>
+        </div>
+        <aside class="impact-card" aria-label="Ringkasan dampak donasi">
+          <span class="card-label">Terkumpul bulan ini</span>
+          <strong>Rp 48.750.000</strong>
+          <div class="progress" aria-label="Progress target 78 persen">
+            <span style="width: 78%"></span>
+          </div>
+          <p>78% dari target Rp 62.500.000</p>
+        </aside>
+      </section>
+
+      <section class="stats" aria-label="Statistik donasi">
+        <article>
+          <strong>1.250+</strong>
+          <span>Donatur</span>
+        </article>
+        <article>
+          <strong>38</strong>
+          <span>Program aktif</span>
+        </article>
+        <article>
+          <strong>12 kota</strong>
+          <span>Jangkauan bantuan</span>
+        </article>
+      </section>
+
+      <section id="program" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Program bantuan</p>
+          <h2>Pilih dampak yang ingin Anda dukung.</h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <div class="program-icon">🍚</div>
+            <h3>Paket Pangan</h3>
+            <p>Bantuan sembako mingguan untuk keluarga rentan dan lansia.</p>
+          </article>
+          <article class="program-card">
+            <div class="program-icon">🎒</div>
+            <h3>Beasiswa Anak</h3>
+            <p>Dukung perlengkapan sekolah dan biaya belajar anak-anak.</p>
+          </article>
+          <article class="program-card">
+            <div class="program-icon">🩺</div>
+            <h3>Sehat Bersama</h3>
+            <p>Biaya pemeriksaan dasar dan obat untuk warga kurang mampu.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="donasi" class="donation-section">
+        <div class="donation-copy">
+          <p class="eyebrow">Form donasi</p>
+          <h2>Isi nominal dan data singkat Anda.</h2>
+          <p>
+            Ini adalah contoh web donasi sederhana. Form akan menampilkan ringkasan
+            donasi tanpa mengirim data ke server.
+          </p>
+        </div>
+        <form class="donation-form" id="donationForm">
+          <label for="name">Nama donatur</label>
+          <input id="name" name="name" type="text" placeholder="Nama Anda" required />
+
+          <label for="amount">Nominal donasi</label>
+          <select id="amount" name="amount" required>
+            <option value="50000">Rp 50.000</option>
+            <option value="100000">Rp 100.000</option>
+            <option value="250000">Rp 250.000</option>
+            <option value="500000">Rp 500.000</option>
+          </select>
+
+          <label for="programChoice">Pilih program</label>
+          <select id="programChoice" name="programChoice" required>
+            <option value="Paket Pangan">Paket Pangan</option>
+            <option value="Beasiswa Anak">Beasiswa Anak</option>
+            <option value="Sehat Bersama">Sehat Bersama</option>
+          </select>
+
+          <label for="message">Pesan dukungan</label>
+          <textarea id="message" name="message" rows="4" placeholder="Semoga bermanfaat..."></textarea>
+
+          <button class="button primary" type="submit">Kirim Donasi</button>
+          <p class="form-note">Pembayaran dapat dihubungkan ke payment gateway sesuai kebutuhan.</p>
+          <div class="form-result" id="formResult" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="kontak" class="site-footer">
+      <p>© 2026 Sahabat Donasi. Bersama kita bantu lebih banyak orang.</p>
+      <a href="mailto:halo@sahabatdonasi.test">halo@sahabatdonasi.test</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
